@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../rtl/usbf_crc16.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_crc5.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_utmi_ls.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_ep_rf.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_ep_rf_dummy.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_idma.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_pa.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_pd.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_pe.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_pl.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_wb.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_rf.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_utmi_if.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_mem_arb.v"
+verilog xil_defaultlib  "../../../../rtl/sram.v"
+verilog xil_defaultlib  "../../../../rtl/usbf_top.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

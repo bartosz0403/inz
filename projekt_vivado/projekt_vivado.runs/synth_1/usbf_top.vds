@@ -1,0 +1,782 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu May 12 16:23:58 2016
+# Process ID: 14771
+# Current directory: /home/mistrz/Desktop/inz/projekt_vivado/projekt_vivado.runs/synth_1
+# Command line: vivado -log usbf_top.vds -mode batch -messageDb vivado.pb -notrace -source usbf_top.tcl
+# Log file: /home/mistrz/Desktop/inz/projekt_vivado/projekt_vivado.runs/synth_1/usbf_top.vds
+# Journal file: /home/mistrz/Desktop/inz/projekt_vivado/projekt_vivado.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source usbf_top.tcl -notrace
+Command: synth_design -top usbf_top -part xc7a15tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14780 
+WARNING: [Synth 8-1935] empty port in module declaration [/home/mistrz/Desktop/inz/rtl/usbf_top.v:123]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1048.996 ; gain = 179.734 ; free physical = 50 ; free virtual = 4501
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'usbf_top' [/home/mistrz/Desktop/inz/rtl/usbf_top.v:109]
+	Parameter SSRAM_HADR bound to: 14 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'usbf_utmi_if' [/home/mistrz/Desktop/inz/rtl/usbf_utmi_if.v:100]
+INFO: [Synth 8-638] synthesizing module 'usbf_utmi_ls' [/home/mistrz/Desktop/inz/rtl/usbf_utmi_ls.v:98]
+	Parameter POR bound to: 15'b000000000000001 
+	Parameter NORMAL bound to: 15'b000000000000010 
+	Parameter RES_SUSP bound to: 15'b000000000000100 
+	Parameter SUSPEND bound to: 15'b000000000001000 
+	Parameter RESUME bound to: 15'b000000000010000 
+	Parameter RESUME_REQUEST bound to: 15'b000000000100000 
+	Parameter RESUME_WAIT bound to: 15'b000000001000000 
+	Parameter RESUME_SIG bound to: 15'b000000010000000 
+	Parameter ATTACH bound to: 15'b000000100000000 
+	Parameter RESET bound to: 15'b000001000000000 
+	Parameter SPEED_NEG bound to: 15'b000010000000000 
+	Parameter SPEED_NEG_K bound to: 15'b000100000000000 
+	Parameter SPEED_NEG_J bound to: 15'b001000000000000 
+	Parameter SPEED_NEG_HS bound to: 15'b010000000000000 
+	Parameter SPEED_NEG_FS bound to: 15'b100000000000000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_utmi_ls.v:445]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_utmi_ls.v:445]
+INFO: [Synth 8-4471] merging register 'T2_gt_1_2_mS_reg' into 'T2_gt_1_0_mS_reg' [/home/mistrz/Desktop/inz/rtl/usbf_utmi_ls.v:385]
+INFO: [Synth 8-256] done synthesizing module 'usbf_utmi_ls' (1#1) [/home/mistrz/Desktop/inz/rtl/usbf_utmi_ls.v:98]
+INFO: [Synth 8-256] done synthesizing module 'usbf_utmi_if' (2#1) [/home/mistrz/Desktop/inz/rtl/usbf_utmi_if.v:100]
+INFO: [Synth 8-638] synthesizing module 'usbf_pl' [/home/mistrz/Desktop/inz/rtl/usbf_pl.v:93]
+	Parameter SSRAM_HADR bound to: 14 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'usbf_pd' [/home/mistrz/Desktop/inz/rtl/usbf_pd.v:94]
+	Parameter IDLE bound to: 4'b0001 
+	Parameter ACTIVE bound to: 4'b0010 
+	Parameter TOKEN bound to: 4'b0100 
+	Parameter DATA bound to: 4'b1000 
+INFO: [Synth 8-638] synthesizing module 'usbf_crc5' [/home/mistrz/Desktop/inz/rtl/usbf_crc5.v:75]
+INFO: [Synth 8-256] done synthesizing module 'usbf_crc5' (3#1) [/home/mistrz/Desktop/inz/rtl/usbf_crc5.v:75]
+INFO: [Synth 8-638] synthesizing module 'usbf_crc16' [/home/mistrz/Desktop/inz/rtl/usbf_crc16.v:75]
+INFO: [Synth 8-256] done synthesizing module 'usbf_crc16' (4#1) [/home/mistrz/Desktop/inz/rtl/usbf_crc16.v:75]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pd.v:364]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pd.v:364]
+INFO: [Synth 8-256] done synthesizing module 'usbf_pd' (5#1) [/home/mistrz/Desktop/inz/rtl/usbf_pd.v:94]
+INFO: [Synth 8-638] synthesizing module 'usbf_pa' [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:87]
+	Parameter IDLE bound to: 5'b00001 
+	Parameter DATA bound to: 5'b00010 
+	Parameter CRC1 bound to: 5'b00100 
+	Parameter CRC2 bound to: 5'b01000 
+	Parameter WAIT bound to: 5'b10000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:199]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:199]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:207]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:207]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:305]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:305]
+INFO: [Synth 8-256] done synthesizing module 'usbf_pa' (6#1) [/home/mistrz/Desktop/inz/rtl/usbf_pa.v:87]
+INFO: [Synth 8-638] synthesizing module 'usbf_idma' [/home/mistrz/Desktop/inz/rtl/usbf_idma.v:103]
+	Parameter SSRAM_HADR bound to: 14 - type: integer 
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter WAIT_MRD bound to: 8'b00000010 
+	Parameter MEM_WR bound to: 8'b00000100 
+	Parameter MEM_WR1 bound to: 8'b00001000 
+	Parameter MEM_WR2 bound to: 8'b00010000 
+	Parameter MEM_RD1 bound to: 8'b00100000 
+	Parameter MEM_RD2 bound to: 8'b01000000 
+	Parameter MEM_RD3 bound to: 8'b10000000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_idma.v:397]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_idma.v:397]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_idma.v:453]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_idma.v:453]
+INFO: [Synth 8-4471] merging register 'wr_done_r_reg' into 'rx_data_done_r2_reg' [/home/mistrz/Desktop/inz/rtl/usbf_idma.v:379]
+INFO: [Synth 8-256] done synthesizing module 'usbf_idma' (7#1) [/home/mistrz/Desktop/inz/rtl/usbf_idma.v:103]
+INFO: [Synth 8-638] synthesizing module 'usbf_pe' [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:109]
+	Parameter SSRAM_HADR bound to: 14 - type: integer 
+	Parameter ACK bound to: 0 - type: integer 
+	Parameter NACK bound to: 1 - type: integer 
+	Parameter STALL bound to: 2 - type: integer 
+	Parameter NYET bound to: 3 - type: integer 
+	Parameter IDLE bound to: 10'b0000000001 
+	Parameter TOKEN bound to: 10'b0000000010 
+	Parameter IN bound to: 10'b0000000100 
+	Parameter IN2 bound to: 10'b0000001000 
+	Parameter OUT bound to: 10'b0000010000 
+	Parameter OUT2A bound to: 10'b0000100000 
+	Parameter OUT2B bound to: 10'b0001000000 
+	Parameter UPDATEW bound to: 10'b0010000000 
+	Parameter UPDATE bound to: 10'b0100000000 
+	Parameter UPDATE2 bound to: 10'b1000000000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:417]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:417]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:431]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:431]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:439]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:439]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:446]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:446]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:453]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:453]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:472]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:472]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:486]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:486]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:494]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:494]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:525]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:525]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:838]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:838]
+INFO: [Synth 8-4471] merging register 'uc_dpd_set_reg' into 'uc_bsel_set_reg' [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:719]
+INFO: [Synth 8-256] done synthesizing module 'usbf_pe' (8#1) [/home/mistrz/Desktop/inz/rtl/usbf_pe.v:109]
+INFO: [Synth 8-4471] merging register 'clr_sof_time_reg' into 'frame_no_we_r_reg' [/home/mistrz/Desktop/inz/rtl/usbf_pl.v:294]
+INFO: [Synth 8-256] done synthesizing module 'usbf_pl' (9#1) [/home/mistrz/Desktop/inz/rtl/usbf_pl.v:93]
+INFO: [Synth 8-638] synthesizing module 'usbf_mem_arb' [/home/mistrz/Desktop/inz/rtl/usbf_mem_arb.v:83]
+	Parameter SSRAM_HADR bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'usbf_mem_arb' (10#1) [/home/mistrz/Desktop/inz/rtl/usbf_mem_arb.v:83]
+INFO: [Synth 8-638] synthesizing module 'usbf_rf' [/home/mistrz/Desktop/inz/rtl/usbf_rf.v:102]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_rf.v:298]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_rf.v:298]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_rf.v:382]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_rf.v:382]
+INFO: [Synth 8-638] synthesizing module 'usbf_ep_rf' [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf.v:87]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf.v:208]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf.v:208]
+INFO: [Synth 8-256] done synthesizing module 'usbf_ep_rf' (11#1) [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf.v:87]
+INFO: [Synth 8-638] synthesizing module 'usbf_ep_rf_dummy' [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf_dummy.v:70]
+INFO: [Synth 8-256] done synthesizing module 'usbf_ep_rf_dummy' (12#1) [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf_dummy.v:70]
+INFO: [Synth 8-256] done synthesizing module 'usbf_rf' (13#1) [/home/mistrz/Desktop/inz/rtl/usbf_rf.v:102]
+INFO: [Synth 8-638] synthesizing module 'usbf_wb' [/home/mistrz/Desktop/inz/rtl/usbf_wb.v:88]
+	Parameter IDLE bound to: 6'b000001 
+	Parameter MA_WR bound to: 6'b000010 
+	Parameter MA_RD bound to: 6'b000100 
+	Parameter W0 bound to: 6'b001000 
+	Parameter W1 bound to: 6'b010000 
+	Parameter W2 bound to: 6'b100000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_wb.v:200]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/mistrz/Desktop/inz/rtl/usbf_wb.v:200]
+INFO: [Synth 8-256] done synthesizing module 'usbf_wb' (14#1) [/home/mistrz/Desktop/inz/rtl/usbf_wb.v:88]
+INFO: [Synth 8-638] synthesizing module 'sram' [/home/mistrz/Desktop/inz/rtl/sram.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter RAM_DEPTH bound to: 32768 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sram' (15#1) [/home/mistrz/Desktop/inz/rtl/sram.v:3]
+WARNING: [Synth 8-308] ignoring empty port [/home/mistrz/Desktop/inz/rtl/usbf_top.v:126]
+INFO: [Synth 8-256] done synthesizing module 'usbf_top' (16#1) [/home/mistrz/Desktop/inz/rtl/usbf_top.v:109]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1113.246 ; gain = 243.984 ; free physical = 64 ; free virtual = 4442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1113.246 ; gain = 243.984 ; free physical = 64 ; free virtual = 4442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a15tcpg236-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1121.250 ; gain = 251.988 ; free physical = 64 ; free virtual = 4442
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a15tcpg236-3
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'usbf_utmi_ls'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'usbf_pd'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'usbf_pa'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'usbf_idma'
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'usbf_pe'
+INFO: [Synth 8-5544] ROM "rx_ack_to_val" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf.v:410]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/mistrz/Desktop/inz/rtl/usbf_ep_rf.v:385]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'usbf_wb'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1172.336 ; gain = 303.074 ; free physical = 63 ; free virtual = 4388
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 2     
+	   3 Input     14 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 8     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 28    
+	   4 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 3     
+	   8 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 22    
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 4     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 9     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 19    
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 212   
++---RAMs : 
+	            1024K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 2     
+	  16 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 4     
+	   2 Input     14 Bit        Muxes := 6     
+	   2 Input     13 Bit        Muxes := 9     
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 7     
+	   2 Input      6 Bit        Muxes := 3     
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   8 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  11 Input      3 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 8     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	  19 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 92    
+	  16 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 11    
+	   6 Input      1 Bit        Muxes := 5     
+	   9 Input      1 Bit        Muxes := 5     
+	  11 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module usbf_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module usbf_utmi_ls 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   3 Input     15 Bit        Muxes := 2     
+	  16 Input     15 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	  16 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module usbf_utmi_if 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module usbf_crc5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+	   4 Input      1 Bit         XORs := 2     
+	   6 Input      1 Bit         XORs := 2     
+	   7 Input      1 Bit         XORs := 1     
+	   8 Input      1 Bit         XORs := 1     
+Module usbf_crc16 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
+	   6 Input      1 Bit         XORs := 1     
+	   7 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 4     
+Module usbf_pd 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 9     
+Module usbf_pa 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 4     
+Module usbf_idma 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               15 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   9 Input      1 Bit        Muxes := 5     
+Module usbf_pe 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 6     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
+	  19 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module usbf_pl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module usbf_mem_arb 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module usbf_ep_rf 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module usbf_rf 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module usbf_wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 3     
+Module sram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	            1024K Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 45 (col length:60)
+BRAMs: 50 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.344 ; gain = 311.082 ; free physical = 57 ; free virtual = 4382
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_4_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_data_data1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dtmp_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'LineState_r_reg[1:0]' into 'u0/u0/line_state_r_reg[1:0]' [/home/mistrz/Desktop/inz/rtl/usbf_top.v:266]
+WARNING: [Synth 8-3331] design usbf_top has unconnected port wb_addr_i[1]
+WARNING: [Synth 8-3331] design usbf_top has unconnected port wb_addr_i[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1188.344 ; gain = 319.082 ; free physical = 69 ; free virtual = 4381
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1188.344 ; gain = 319.082 ; free physical = 69 ; free virtual = 4381
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM u6/mem_reg to conserve power
+WARNING: [Synth 8-3323] Resources of type BRAM have been overutilized. Used = 64, Available = 50. Use report_utilization command for details.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+--------------------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name  | 
++------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+--------------------+
+|usbf_top    | u6/mem_reg | 32 K x 32(READ_FIRST)  | W |   | 32 K x 32(WRITE_FIRST) |   | R | Port A and B | 0      | 32     | usbf_top/extram__2 | 
++------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+--------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+Distributed RAM: 
++------------+------------+-----------+----------------------+--------------------+-------------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives         | Hierarchical Name | 
++------------+------------+-----------+----------------------+--------------------+-------------------+
+|usbf_top    | u6/mem_reg | Implied   | 32 K x 32            | RAM256X1S x 4096   | usbf_top/ram      | 
++------------+------------+-----------+----------------------+--------------------+-------------------+
+
+Note: The table above shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u1/\u1/send_zero_length_r_reg ' (FD) to 'u1/\u2/send_zero_length_r_reg '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u0/u0/OpMode_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (\u1/send_zero_length_r_reg ) is unused and will be removed from module usbf_pl.
+WARNING: [Synth 8-3332] Sequential element (\csr_reg[21] ) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (\csr_reg[20] ) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (\csr_reg[19] ) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (\csr_reg[18] ) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (\csr_reg[14] ) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (\csr_reg[13] ) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (rf_resume_req_r_reg) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (rf_resume_req_reg) is unused and will be removed from module usbf_rf.
+WARNING: [Synth 8-3332] Sequential element (\u0/u0/OpMode_reg[0] ) is unused and will be removed from module usbf_top.
+WARNING: [Synth 8-3332] Sequential element (\u5/state_reg[0] ) is unused and will be removed from module usbf_top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 53 ; free virtual = 4239
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 53 ; free virtual = 4239
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 53 ; free virtual = 4239
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 53 ; free virtual = 4239
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 53 ; free virtual = 4239
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\u4/suspend_r_reg ' (FD) to 'susp_o_reg'
+WARNING: [Synth 8-3332] Sequential element (\u4/suspend_r_reg ) is unused and will be removed from module usbf_top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:32 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 53 ; free virtual = 4239
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 52 ; free virtual = 4239
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 52 ; free virtual = 4239
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 51 ; free virtual = 4239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 52 ; free virtual = 4239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 52 ; free virtual = 4239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 51 ; free virtual = 4239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|usbf_top    | u1/u0/d2_reg[7] | 3      | 8     | NO           | NO                 | NO                | 8      | 0       | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |   123|
+|3     |LUT1      |   104|
+|4     |LUT2      |   324|
+|5     |LUT3      |   475|
+|6     |LUT4      |   572|
+|7     |LUT5      |   386|
+|8     |LUT6      |  1844|
+|9     |MUXF7     |   576|
+|10    |MUXF8     |   264|
+|11    |RAM256X1S |  4096|
+|12    |SRL16E    |     8|
+|13    |FDRE      |  1305|
+|14    |FDSE      |   439|
+|15    |IBUF      |    82|
+|16    |OBUF      |    72|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             | 10672|
+|2     |  u0     |usbf_utmi_if |   283|
+|3     |    u0   |usbf_utmi_ls |   239|
+|4     |  u1     |usbf_pl      |  1296|
+|5     |    u0   |usbf_pd      |   137|
+|6     |    u1   |usbf_pa      |    70|
+|7     |    u2   |usbf_idma    |   700|
+|8     |    u3   |usbf_pe      |   305|
+|9     |  u2     |usbf_mem_arb |    52|
+|10    |  u4     |usbf_rf      |  2579|
+|11    |    u0   |usbf_ep_rf   |   509|
+|12    |    u1   |usbf_ep_rf_0 |   446|
+|13    |    u2   |usbf_ep_rf_1 |   586|
+|14    |    u3   |usbf_ep_rf_2 |   750|
+|15    |  u5     |usbf_wb      |   214|
+|16    |  u6     |sram         |  6080|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 51 ; free virtual = 4239
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 1325.344 ; gain = 330.473 ; free physical = 51 ; free virtual = 4239
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.344 ; gain = 456.082 ; free physical = 51 ; free virtual = 4239
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4301 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4096 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 4096 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+117 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:41 . Memory (MB): peak = 1420.355 ; gain = 479.875 ; free physical = 55 ; free virtual = 4171
+report_utilization: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.33 . Memory (MB): peak = 1452.371 ; gain = 0.000 ; free physical = 68 ; free virtual = 4168
+INFO: [Common 17-206] Exiting Vivado at Thu May 12 16:24:50 2016...

@@ -1,0 +1,7 @@
+Running: xsim.dir/usbf_top_behav/xsimk -simmode gui -wdb usbf_top_behav.wdb -simrunnum 0 -socket 43173
+Design successfully loaded
+Design Loading Memory Usage: 134524 KB (Peak: 134916 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 277892 KB (Peak: 343428 KB)
+Simulation CPU Usage: 50 ms

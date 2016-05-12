@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_crc16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_crc16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_crc5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_crc5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_utmi_ls.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_utmi_ls
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_ep_rf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_ep_rf
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_ep_rf_dummy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_ep_rf_dummy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_idma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_idma
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_pa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_pa
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_pd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_pd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_pe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_pe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_pl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_pl
+INFO: [VRFC 10-2458] undeclared symbol send_zero_length, assumed default net type wire [/home/mistrz/Desktop/inz/rtl/usbf_pl.v:375]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_rf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_rf
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_utmi_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_utmi_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_mem_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_mem_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/rtl/usbf_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usbf_top
+WARNING: [VRFC 10-2379] empty port in module declaration [/home/mistrz/Desktop/inz/rtl/usbf_top.v:126]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mistrz/Desktop/inz/projekt_vivado/projekt_vivado.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

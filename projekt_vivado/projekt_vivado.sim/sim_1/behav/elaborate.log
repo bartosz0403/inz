@@ -1,0 +1,27 @@
+Vivado Simulator 2015.3
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.3/bin/unwrapped/lnx64.o/xelab -wto 9b428910177949db98be62b5e8759e26 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot usbf_top_behav xil_defaultlib.usbf_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.usbf_utmi_ls
+Compiling module xil_defaultlib.usbf_utmi_if
+Compiling module xil_defaultlib.usbf_crc5
+Compiling module xil_defaultlib.usbf_crc16
+Compiling module xil_defaultlib.usbf_pd
+Compiling module xil_defaultlib.usbf_pa
+Compiling module xil_defaultlib.usbf_idma(SSRAM_HADR=14)
+Compiling module xil_defaultlib.usbf_pe(SSRAM_HADR=14)
+Compiling module xil_defaultlib.usbf_pl(SSRAM_HADR=14)
+Compiling module xil_defaultlib.usbf_mem_arb(SSRAM_HADR=14)
+Compiling module xil_defaultlib.usbf_ep_rf
+Compiling module xil_defaultlib.usbf_ep_rf_dummy
+Compiling module xil_defaultlib.usbf_rf
+Compiling module xil_defaultlib.usbf_wb
+Compiling module xil_defaultlib.sram_default
+Compiling module xil_defaultlib.usbf_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot usbf_top_behav

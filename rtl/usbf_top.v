@@ -122,8 +122,6 @@ module usbf_top(// WISHBONE Interface
 		OpMode_pad_o, usb_vbus_pad_i,
 		VControl_Load_pad_o, VControl_pad_o, VStatus_pad_i,
 
-		// Buffer Memory Interface
-		sram_adr_o, sram_data_i, sram_data_o, sram_re_o, sram_we_o
 
 		);
 
@@ -166,11 +164,7 @@ output		VControl_Load_pad_o;
 output	[3:0]	VControl_pad_o;
 input	[7:0]	VStatus_pad_i;
 
-output	[SSRAM_HADR:0]	sram_adr_o;
-input	[31:0]	sram_data_i;
-output	[31:0]	sram_data_o;
-output		sram_re_o;
-output		sram_we_o;
+
 
 ///////////////////////////////////////////////////////////////////
 //
@@ -247,6 +241,15 @@ wire		rf_resume_req;	// Resume Request From main CSR
 reg		susp_o;
 reg	[1:0]	LineState_r;	// Added to make a full synchronizer
 reg	[7:0]	VStatus_r;	// Added to make a full synchronizer
+
+
+
+wire	[SSRAM_HADR:0]	sram_adr_o;
+wire	[31:0]	sram_data_o;
+wire		sram_re_o;
+wire		sram_we_o;
+wire	[31:0]	sram_data_i;
+
 
 ///////////////////////////////////////////////////////////////////
 //
@@ -479,6 +482,19 @@ usbf_wb	u5(	.phy_clk(	phy_clk_pad_i	),
 		.rf_dout(	wb2rf_d		),
 		.rf_din(	rf2wb_d		)
 		);
+
+
+
+sram u6(
+	.clk(				clk_i)         , // Clock Input
+	.address(			sram_adr_o)     , // Address Input
+	.data_in(			sram_data_o)        , // Data bi-directional
+	.data_out(			sram_data_i)       , // Data bi-directional
+	.write_enable_i(	sram_we_o)          , // Write Enable
+	.read_enable_i(		sram_re_o)           // Read Enable
+);
+
+
 
 
 ///////////////////////////////////////////////////////////////////
